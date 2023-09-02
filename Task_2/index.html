@@ -24,24 +24,28 @@
         <button>Add</button>
       </form>
     
-      <ul id="todo-pane"></ul>
+      <ul id="todo-pane">
+        <li>test</li>
+      </ul>
     </main>
 
     <script>
       const todoPane = document.getElementById('todo-pane');
 
       createElement = (title) => {
+       
         // Create the text node with the variable 'title'.
-        
+        let titles = document.createTextNode(title);
         // Create a new list item element to contain the text node.
-        
+        let newListItem = document.createElement("li");
         // Add the text node to the list item element.
-        
+        newListItem.appendChild(titles);
         // Return the new element.
+        return newListItem;
       }
 
       const newElement = createElement('This is the title');
-
+      todoPane.appendChild(newElement);
       // Insert newElement into the unordered list with id 'todo-pane'.
     </script>
   </body>

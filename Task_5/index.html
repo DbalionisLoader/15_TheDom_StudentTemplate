@@ -29,13 +29,27 @@
         <img src="https://cdn1.iconfinder.com/data/icons/prettyoffice8/256/Flag-yellow.png">
         <div>This is my title.</div>
       </li>
+      <li class="todo just-created">
+        <img src="https://cdn1.iconfinder.com/data/icons/prettyoffice8/256/Flag-yellow.png">
+        <div>This is my title.</div>
+      </li>
+      <li class="todo just-created">
+        <img src="https://cdn1.iconfinder.com/data/icons/prettyoffice8/256/Flag-yellow.png">
+        <div>This is my title.</div>
+      </li>
     </ul>
   </main>
 
   <script>
     // Get the form by ID from the forms collection.
-    const form = document.querySelector('form');
+    const form = document.querySelectorAll('form');
 
+    let todo = document.querySelectorAll('.todo');
+    todo.forEach(todo2 => {
+      todo2.addEventListener('click', (event) => {
+      event.currentTarget.remove();
+    });
+    });
     // 1. Add a submit listener to the form that prevents default.
     // 2. Fill out the title and submit 
     // 3. It shouldn't submit and you shouldn't see 'Not Found'.

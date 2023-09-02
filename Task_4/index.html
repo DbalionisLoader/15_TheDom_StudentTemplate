@@ -21,7 +21,7 @@
           <option value="medium" selected>Medium</option>
           <option value="high">High</option>
         </select>
-        <button>Add</button>
+        <button id="submitAlert">Add</button>
       </form>
     
       <ul id="todo-pane"></ul>
@@ -29,7 +29,10 @@
 
     <script>
       const form = document.querySelector('form');
-
+      document.getElementById('submitAlert').addEventListener('click', () =>{
+        console.log("button works");
+        alert("Button works alert");
+      })
       // Add a submit handler to the form that displays an alert.
       // Can you find different ways to trigger the alert?
     </script>

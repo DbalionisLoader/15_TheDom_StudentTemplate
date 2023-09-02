@@ -31,21 +31,22 @@
       // Modify the code below to set the variables appropriately.
 
       // Get the form by ID from the forms collection.
-      const form = false;
+      const form = document.getElementById('todo');
       // Get the todo pane (the 'ul' element).
-      const todoPane = false;
+      const todoPane = document.getElementById('todo-pane');
       // Get the text input for the title.
-      const titleInput = false;
+      const titleInput = document.getElementById('title').value;
       // Get the priority select element.
-      const prioritySelect = false;
+      const prioritySelect = document.getElementById("priority").value
       // Get a list of all elements with the 'todo' class.
-      const allTodos = false;
-
+      const allTodos = document.getElementsByClassName('todo');
+ 
       console.log('form:', form);
       console.log('todoPane:', todoPane);
       console.log('titleInput:', titleInput);
       console.log('prioritySelect:', prioritySelect);
       console.log('allTodos:', allTodos);
+     
     </script>
   </body>
 </html>
