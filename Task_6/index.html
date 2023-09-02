@@ -1,41 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./app.js"></script>
-    <title>Rask 6 - ToDo List</title>
-  </head>
-  <body>
-    <a href="https://codepen.io/andrushka/pen/yLMzPXB?editors=1010">Codepen Link</a>
-    <main class="container">
-      <h1>My todo list</h1>
-      
-      <form id="todo">
-        <label for="title">Title</label>
-        <input type="text" name="title" id="title" required>
-        <label for="priority">Priority</label>
-        <select name="priority" id="priority">
-          <option value="low">Low</option>
-          <option value="medium" selected>Medium</option>
-          <option value="high">High</option>
-        </select>
-        <button>Add</button>
-      </form>
-    
-      <ul id="todo-pane">
-        <!-- These are just example task, delete these once you have completed your code -->
-        <li class="todo">
-          <img src="https://cdn1.iconfinder.com/data/icons/prettyoffice8/256/Flag-yellow.png">
-          <div>Task One</div>
-        </li>
-        <li class="todo just-created">
-          <img src="https://cdn1.iconfinder.com/data/icons/prettyoffice8/256/Flag-green.png">
-          <div>Task Two.</div>
-        </li>
-      </ul>
-    </main>
-  </body>
-</html>
+<link rel="stylesheet" href="../Task_6/style.css">
+<script defer src="../Task_6/app.js"></script> 
+<div class="container">
+  <h1>Todo</h1>
+  
+  <form id="todo">
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title" required>
+    <label for="priority">Priority</label>
+    <select name="priority" id="priority">
+      <option value="low">Low</option>
+      <option value="medium" selected>Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button>Add</button>
+  </form>
+
+  <!-- This is an empty container for use by javascript. -->
+  <ul id="todo-pane">
+      <li class="todo">
+        <img src="https://cdn1.iconfinder.com/data/icons/prettyoffice8/256/Flag-yellow.png">
+        <div>This is my title.</div>
+      </li>
+  </ul>
+  
+  <footer>
+    <small>
+      Flag images used with thanks from <a href="https://www.iconfinder.com/iconsets/prettyoffice8">https://www.iconfinder.com/iconsets/prettyoffice8</a>.
+    </small>
+  </footer>
+</div>
